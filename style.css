@@ -91,6 +91,13 @@ button {
     padding: 15px;
 }
 
+.coluna4 {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+
 input.contratante {
     width: 400px;
     float: left;
