@@ -63,7 +63,7 @@ input {
 }
 
 button {
-    width: 50%;
+    width: 70%;
     background-color: #29a029;
     color: white;
     padding: 14px 20px;
@@ -71,6 +71,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .coluna2 {
