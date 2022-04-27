@@ -92,6 +92,24 @@
             </div>
         </div>
         <div class="linha3">
+            <div class="gridRadios">
+                <h4 class="referente">Dinheiro:</h4>
+                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+            </div>
+            <div class="gridRadios">
+                <h4 class="referente">Pix:</h4>
+                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+            </div>
+            <div class="gridRadios">
+                <h4 class="referente">Cheque:</h4>
+                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+            </div>
+            <div class="gridRadios">
+                <h4 class="referente">Cartão:</h4>
+                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+            </div>
+        </div>
+        <div class="linha3">
             <div class="coluna2">
                 <button type="button" onclick="gerarRecibo()" class="btn btn-secondary">Gerar recibo</button>
             </div>
@@ -156,6 +174,10 @@
         function dataAtual() {
             let data = new Date();
             return data.getDate() + "-" + (data.getMonth() + 1) + "-" + data.getFullYear();
+        }
+
+        function mostrarDinheiro(){
+            document.getElementById('dinheiro').style.display=" block"
         }
     </script>
 </body>

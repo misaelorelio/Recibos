@@ -74,6 +74,12 @@ button {
     font-size: 20px;
 }
 
+.gridRadios {
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
 .coluna2 {
     width: 40%;
     float: left;
