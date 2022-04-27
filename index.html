@@ -42,29 +42,38 @@
                 <input type="text" class="cidade" id="cidade">
             </div>
         </div>
-        <div class="coluna1">
-            <h4 class="cpf">CPF ou CNPJ (opcional):</h4>
-            <input type="number" class="cpf" id="cpf_cnpj">
-        </div>
-        <div class="coluna2">
-            <h4 class="referente">Referente à:</h4>
-            <input type="text" class="referente" id="referente">
-        </div>
-        <div>
-            <div class="coluna4">
-                <h4 class="prestador_servico">Nome do prestador de serviço:</h4>
-                <input type="number" class="prestador" id="prestador_servico">
+        <div class="linha3">
+            <div class="coluna1">
+                <h4 class="cpf">CPF ou CNPJ (opcional):</h4>
+                <input type="number" class="cpf" id="cpf_cnpj">
             </div>
-            <div class="coluna4">
-                <h4 class="prestador_servico">Nome do prestador de serviço:</h4>
-                <input type="number" class="prestador" id="prestador_servico">
+            <div class="coluna2">
+                <h4 class="referente">Referente à:</h4>
+                <input type="text" class="referente" id="referente">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <hr>
+        <h2 class="titulo" style="margin-bottom: 30px">Dados do prestador de serviços</h2>
+        <h4 class="referente" style="margin: 10px 20px">Nome do Prestador de Serviço:</h4>
+        <div class="linha3">
+            <input type="text" class="referente" style="margin: 10px 20px" id=prestador_servico">
+        </div>
+        <div class="linha3">
+            <div class="coluna1">
+                <h4 class="referente">Endereço:</h4>
+                <input type="text" class="contratante" id="endereço">
+            </div>
+            <div class="coluna3">
+                <h4>Cidade:</h4>
+                <input type="text" class="cidade" id="cidade">
+            </div>
+        </div>
+        <div class="linha3">
+            <div class="coluna2">
                 <button type="button" onclick="gerarRecibo()" class="btn btn-secondary">Gerar recibo</button>
             </div>
         </div>
+
     </div>
     <!-- DADOS PRESTADOR DE SERVIÇO -->
 

@@ -63,7 +63,7 @@ input {
 }
 
 button {
-    width: 22%;
+    width: 50%;
     background-color: #29a029;
     color: white;
     padding: 14px 20px;
@@ -108,7 +108,7 @@ input.cpf {
 }
 
 input.referente {
-    width:155%;
+    width:100%;
 }
 
 input.cidade {
