@@ -92,21 +92,50 @@
             </div>
         </div>
         <div class="linha3">
+            <h4 style="margin: 10px 20px">Formas de pagamento</h4>
+        </div>
+        <div class="linha3">
             <div class="gridRadios">
-                <h4 class="referente">Dinheiro:</h4>
-                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+                <label>
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
+                        onclick="mostrarDinheiro()">
+                    Dinheiro
+                </label>
             </div>
             <div class="gridRadios">
-                <h4 class="referente">Pix:</h4>
-                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+                <label>
+                    <input type="radio" id="pix_pix" name="pix_pix" value="pix_pix"
+                        onclick="mostrarPix()">
+                    Pix
+                </label>
             </div>
             <div class="gridRadios">
-                <h4 class="referente">Cheque:</h4>
-                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+                <label>
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
+                        onclick="mostrarDinheiro()">
+                    Cheque
+                </label>
             </div>
             <div class="gridRadios">
-                <h4 class="referente">Cartão:</h4>
-                <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro" onclick="mostrarDinheiro()">
+                <label>
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
+                        onclick="mostrarDinheiro()">
+                    Cartão
+                </label>
+            </div>
+        </div>
+        <div class="linha2" style="display: none" id="pix">
+            <div class="coluna1">
+                <h4>Quem recebeu? </h4>
+                <input type="number" class="form-control" id="numero">
+            </div>
+            <div class="coluna2">
+                <h4>Instituição/Banco: </h4>
+                <input type="text" class="form-control" id="estado">
+            </div>
+            <div class="coluna3">
+                <h4>Chave:</h4>
+                <input type="text" class="form-controlstyle="display: none"" id="cep">
             </div>
         </div>
         <div class="linha3">
@@ -176,8 +205,8 @@
             return data.getDate() + "-" + (data.getMonth() + 1) + "-" + data.getFullYear();
         }
 
-        function mostrarDinheiro(){
-            document.getElementById('dinheiro').style.display=" block"
+        function mostrarPix() {
+            document.getElementById('pix').style.display = " block"
         }
     </script>
 </body>
