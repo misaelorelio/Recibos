@@ -97,28 +97,29 @@
         <div class="linha3">
             <div class="gridRadios">
                 <label>
-                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
-                        onclick="mostrarDinheiro()">
+                    <input type="radio" id="dinheiro" name="dinheiro_especie" value="dinheiro"
+                    onclick="mostrarDinheiro()"
+                    >
                     Dinheiro
                 </label>
             </div>
             <div class="gridRadios">
                 <label>
-                    <input type="radio" id="pix_pix" name="pix_pix" value="pix_pix"
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
                         onclick="mostrarPix()">
                     Pix
                 </label>
             </div>
             <div class="gridRadios">
                 <label>
-                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
                         onclick="mostrarDinheiro()">
                     Cheque
                 </label>
             </div>
             <div class="gridRadios">
                 <label>
-                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" label="Cartão" value="dinheiro"
+                    <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
                         onclick="mostrarDinheiro()">
                     Cartão
                 </label>
@@ -205,7 +206,12 @@
         }
 
         function mostrarPix() {
-            document.getElementById('pix').style.display = " block"
+                document.getElementById('pix').style.display = " block" 
+            
+        }
+        function mostrarDinheiro() {
+                document.getElementById('pix').style.display = " none" 
+            
         }
     </script>
 </body>
