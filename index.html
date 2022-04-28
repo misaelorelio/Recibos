@@ -95,29 +95,28 @@
             <h4 style="margin: 10px 20px">Formas de pagamento</h4>
         </div>
         <div class="linha3">
-            <div class="gridRadios">
+            <div class="coluna2">
                 <label>
                     <input type="radio" id="dinheiro" name="dinheiro_especie" value="dinheiro"
-                    onclick="mostrarDinheiro()"
-                    >
+                        onclick="mostrarDinheiro()">
                     Dinheiro
                 </label>
             </div>
-            <div class="gridRadios">
+            <div class="coluna2">
                 <label>
                     <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
                         onclick="mostrarPix()">
                     Pix
                 </label>
             </div>
-            <div class="gridRadios">
+            <div class="coluna2">
                 <label>
                     <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
-                        onclick="mostrarDinheiro()">
+                        onclick="mostrarCheque()">
                     Cheque
                 </label>
             </div>
-            <div class="gridRadios">
+            <div class="coluna2">
                 <label>
                     <input type="radio" id="dinheiro_especie" name="dinheiro_especie" value="dinheiro"
                         onclick="mostrarDinheiro()">
@@ -141,6 +140,30 @@
                 </div>
             </div>
         </div>
+        <!-- Cheque -->
+        <div class="container2" style="display: none" id="cheque">
+            <div class="linha">
+                <div class="coluna1">
+                    <h4>Nº do Cheque: </h4>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="coluna2">
+                    <h4>Banco:</h4>
+                    <input type="text" class="form-control" id="estado">
+                </div>
+
+            </div>
+            <div class="linha">
+                <div class="coluna3">
+                    <h4>Agência:</h4>
+                    <input type="text" class="form-control" id="cep">
+                </div>
+                <div class="coluna2">
+                    <h4>Bom para...</h4>
+                    <input type="text" class="form-control" id="cep">
+                </div>
+            </div>
+        </div>
         <div class="linha3">
             <div class="coluna2">
                 <button type="button" onclick="gerarRecibo()" class="btn btn-secondary">Gerar recibo</button>
@@ -148,7 +171,7 @@
         </div>
 
     </div>
-    
+
     <!-- Recibo para impressão -->
 
     <div class="print">
@@ -206,12 +229,17 @@
         }
 
         function mostrarPix() {
-                document.getElementById('pix').style.display = " block" 
-            
+            document.getElementById('pix').style.display = " block"
+            document.getElementById('cheque').style.display = " none"
         }
         function mostrarDinheiro() {
-                document.getElementById('pix').style.display = " none" 
-            
+            document.getElementById('pix').style.display = " none"
+            document.getElementById('cheque').style.display = " none"
+
+        }
+        function mostrarCheque() {
+            document.getElementById('cheque').style.display = " block"
+            document.getElementById('pix').style.display = " none"
         }
     </script>
 </body>
